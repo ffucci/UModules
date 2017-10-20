@@ -1,6 +1,5 @@
 #include "UModules.hpp"
 #include "../../../include/engine.hpp"
-#include "OscillatorLib.hpp"
 #include <math.h>
 
 struct Compare : Module {
