@@ -20,8 +20,6 @@ struct Compare : Module {
 		NUM_OUTPUTS
 	};
 
-	float phase = 0.0;
-
 	Compare() : Module(NUM_PARAMS, NUM_INPUTS, NUM_OUTPUTS) {}
 	void step();
 

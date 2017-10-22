@@ -14,3 +14,7 @@ extern Plugin *plugin;
 struct CompareWidget : ModuleWidget {
 	CompareWidget();
 };
+
+struct UWaveShapeWidget : ModuleWidget{
+	UWaveShapeWidget();
+};
