@@ -90,7 +90,7 @@ UWaveShapeWidget::UWaveShapeWidget(){
     //First block input
     addInput(createInput<PJ301MPort>(Vec(6, 30 + OFFSET2), module, UWaveShape::SIGNALA1_INPUT));
     addInput(createInput<PJ301MPort>(Vec(30, 100 + OFFSET2), module, UWaveShape::SIGNALB1_INPUT));
-    addParam(createParam<Davies1900hSmallBlackKnob>(Vec(4, 135 + OFFSET2), module, UWaveShape::FREQ_PARAM, 0.0, 4.0, 0.0));
+    addParam(createParam<RoundBlackKnob>(Vec(4, 135 + OFFSET2), module, UWaveShape::FREQ_PARAM, 0.0, 4.0, 0.0));
     addInput(createInput<PJ301MPort>(Vec(32, 135 + OFFSET2), module, UWaveShape::WSHAPECV_INPUT));
     addOutput(createOutput<PJ301MPort>(Vec(16, 175 + OFFSET2), module, UWaveShape::WSHAPE1_OUTPUT));
     //addOutput(createOutput<PJ301MPort>(Vec(16, 255), module, UWaveShape::COMPLESS_OUTPUT));
@@ -98,7 +98,7 @@ UWaveShapeWidget::UWaveShapeWidget(){
 
     addInput(createInput<PJ301MPort>(Vec(6, 30+OFFSET), module, UWaveShape::SIGNALA2_INPUT));
     addInput(createInput<PJ301MPort>(Vec(30, 100+OFFSET), module, UWaveShape::SIGNALB2_INPUT));
-    addParam(createParam<Davies1900hSmallBlackKnob>(Vec(4, 135+OFFSET), module, UWaveShape::FREQ2_PARAM, 0.0, 4.0, 0.0));
+    addParam(createParam<RoundBlackKnob>(Vec(4, 135+OFFSET), module, UWaveShape::FREQ2_PARAM, 0.0, 4.0, 0.0));
     addInput(createInput<PJ301MPort>(Vec(32, 135+OFFSET), module, UWaveShape::WSHAPECV2_INPUT));
     addOutput(createOutput<PJ301MPort>(Vec(16, 175+OFFSET), module, UWaveShape::WSHAPE2_OUTPUT));
 
